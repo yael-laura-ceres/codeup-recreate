@@ -2,6 +2,12 @@
 
 :root {
   --null: "";
+  --gcRed: #D65F45;
+  --gcOrange:#DEA13D;
+  --gcGreen: #87AC73;
+  --gcTeal: #4BA8A9;
+  --gcLGray: #F0F0F0;
+  --gcMGray: #E6E6E6;
 }
 
 /* Borders (for troubleshooting) */
@@ -27,11 +33,126 @@ main, html, body {
   height: 100%;
   padding: 0px;
   margin: 0px;
+  background: var(--gcMGray);
   
 }
 
-h1 {
+h1, h2, h3, h4, h5 {
+  font-family: 'Anton', sans-serif;
+  margin: .5em auto;
 
 }
 
-/* Page Content */ 
+.box {
+  border: 5px solid white;
+  border-radius: 900px;
+  vertical-align: middle;
+  text-align: center;
+
+
+}
+
+
+p {
+  font-family: 'Abel', sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* Page Content */
+
+.red-circle{
+  background: var(--gcRed);
+  color: white;
+}
+
+.orange-circle{
+  background: var(--gcOrange);
+  color: white;
+}
+
+.green-circle{
+  background: var(--gcGreen);
+  color: white;
+ }
+
+.teal-circle{
+  background: var(--gcTeal);
+  color: white;
+}
+
+
+@media screen and (min-width:1200px) {
+
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    height: 4em;
+  }
+
+  nav img{
+    width: 105px;
+    height: 105px;
+    margin-right: 1em;
+  }
+
+  #nav-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 4em;
+  }
+
+  #nav-right{
+    /*height: 105px;*/
+    display: flex;
+    flex-direction-: row;
+    align-items: center;
+    margin-right: 4em;
+
+
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: flex-start;*/
+    background: white;
+    list-style: none;
+    margin-bottom: 0;
+    align-self: center;
+    /*margin: 1em;*/
+
+  }
+
+  nav li{
+    margin: 0 1em;
+    display: flex;
+    align-items: center;
+  }
+
+  .circle-row{
+    width: 75%;
+    margin: auto;
+  }
+
+  .box {
+    width: 150px;
+    height: 150px;
+  }
+
+  .box h2{
+    margin: 1.5em 0;
+  }
+
+  .line{
+    width: 100%;
+    border: 2px solid #cccccc;
+    height: 2px;
+  }
+}
+
