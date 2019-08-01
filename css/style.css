@@ -95,6 +95,10 @@ p {
     margin-bottom: 2em;
   }
 
+  .nav-mobile {
+      display: none;
+  }
+
   nav img {
     width: 105px;
     height: 105px;
@@ -562,7 +566,19 @@ p {
         padding-top: 2em;
     }
 
-    .nav-mobile img {
+    .white-bg-bar {
+        height: 5em;
+        width: 100%;
+        margin-bottom: 8em;
+        margin-top: 8em;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .white-bg-bar img {
         margin: 0 auto;
         width: 50%;
         height: auto;
@@ -646,10 +662,22 @@ p {
 
     .card {
         width: 25em !important;
+        margin: 1em 0 !important;
     }
 
     .card-img-top {
         height: 17.656em !important;
         width: 100% !important;
+    }
+
+    .card-text{
+        font-size: 16px;
+    }
+
+    .box-small{
+        width: 2em !important;
+        height: 2em !important;
+        padding-bottom: 0 !important;
+        padding-top: .3em !important;
     }
 }
