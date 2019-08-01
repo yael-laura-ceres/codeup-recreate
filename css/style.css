@@ -36,6 +36,12 @@ main, html, body {
   background: var(--gcMGray);
 }
 
+a:link, a:visited, a:hover, a:active{
+    color: black;
+    text-transform: uppercase;
+
+}
+
 h1, h2, h3, h4, h5 {
   font-family: 'Anton', sans-serif;
   margin: .5em auto;
@@ -270,7 +276,7 @@ p {
   }
 
   .post img {
-    width: 50px;
+    width: 75px;
     height: 50px;
     margin: auto 1em auto 0;
   }
@@ -311,7 +317,7 @@ p {
 /*              Medium                     */
 /*******************************************/
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1083px) {
     #nav-left{
         margin-left: 3em;
     }
@@ -516,7 +522,7 @@ p {
     }
 
     .post img {
-        width: 50px;
+        width: 75px;
         height: 50px;
         margin: auto 1em auto 0;
     }
