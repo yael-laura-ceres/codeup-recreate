@@ -308,11 +308,89 @@ p {
 /*******************************************/
 
 @media screen and (max-width: 991px) {
+    #nav-left{
+        margin-left: 3em;
+    }
+
+    #nav-right{
+        margin-right: 1em;
+    }
+
+    nav li {
+        margin: 0 .5em;
+
+    }
+
+    header>.row>h2{
+        font-size: 1.7em;
+    }
+
+    section {
+        display: grid !important;
+        grid-template-columns: 60% 40%;
+    }
+
+    .headline p {
+        margin-top: 4em;
+        margin-bottom: 1em;
+    }
+
+    .cards {
+        grid-template-columns: auto auto !important;
+        margin-right: 2em;
+    }
+
+    .card {
+        margin: .4em !important;
+        width: 10em !important;
+    }
+
+    .card-img-top {
+        width: 100% !important;
+        height: 105px !important;
+    }
+
+    .card-body {
+        width: auto !important;
+    }
+
+    .headline-posts {
+        padding: 1em 1em 0px .5em !important;
+    }
+
+    .headline-posts p {
+        font-size: 10px !important;
+        padding-top: 3em !important;
+    }
+
+    .post {
+        margin: 1em .5em 0em .5em !important;
+    }
+
+    .post:nth-child(2), .post:nth-child(3) {
+        margin-top: 0em !important;
+    }
+
+    .post h4 {
+        font-size: 1.25rem !important;
+    }
+
+    .headline-tweet {
+        margin-top: .5em !important;
+        padding-bottom: 0em !important;
+    }
+
+    .tweet p {
+        padding-top: .2em !important;
+        line-height: 1.2 !important;
+    }
 
     /* Circle row */
     .circle-row {
         width: 75%;
-        margin: auto;
+        padding-top: .2em;
+        padding-bottom: 1em;
+        margin: 1.2em auto !important;
     }
 
     /*!!!!!!!!!!*/
@@ -338,12 +416,6 @@ p {
         font-size: 10px;
     }
 
-    /* Cards  */
-    /*.cards {*/
-    /*  display: flex;*/
-    /*  flex-direction: row;*/
-    /*  flex-wrap: wrap;*/
-    /*}*/
     .cards {
         display: grid;
         grid-template-columns: 65% 35%;
@@ -475,3 +547,11 @@ p {
 
 }
 
+/*Small*/
+
+@media screen and (max-width: 767px) {
+    .posts-article{
+        display: none;
+    }
+
+}
