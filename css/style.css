@@ -34,13 +34,11 @@ main, html, body {
   padding: 0px;
   margin: 0px;
   background: var(--gcMGray);
-  
 }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Anton', sans-serif;
   margin: .5em auto;
-
 }
 
 .box {
@@ -48,10 +46,7 @@ h1, h2, h3, h4, h5 {
   border-radius: 900px;
   vertical-align: middle;
   text-align: center;
-
-
 }
-
 
 p {
   font-family: 'Abel', sans-serif;
@@ -81,61 +76,65 @@ p {
   color: white;
 }
 
+@media screen and (min-width: 992px) {
 
-@media screen and (min-width:1200px) {
+  /* Navbar */
 
-  nav{
+  nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    height: 4em;
     margin-top: 2em;
     margin-bottom: 2em;
-
-    height: 4em;
   }
 
-  nav img{
+  nav img {
     width: 105px;
     height: 105px;
     margin-right: 1em;
   }
 
-  #nav-left{
+  #nav-left {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 4em;
+    margin-left: 12em;
   }
 
-  #nav-right{
-    /*height: 105px;*/
+  #nav-left p {
+    font-weight: 200;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+  }
+
+  #nav-right {
     display: flex;
     flex-direction-: row;
     align-items: center;
-    margin-right: 4em;
-
-
+    margin-right: 12em;
   }
+
   nav ul {
     display: flex;
     flex-direction: row;
-    /*justify-content: flex-start;*/
     background: white;
     list-style: none;
     margin-bottom: 0;
     align-self: center;
-    /*margin: 1em;*/
-
   }
 
-  nav li{
+  nav li {
     margin: 0 1em;
     display: flex;
     align-items: center;
   }
 
-  .circle-row{
+  /* Circle row */
+
+  .circle-row {
     width: 75%;
     margin: auto;
   }
@@ -145,14 +144,150 @@ p {
     height: 150px;
   }
 
-  .box h2{
+  .box h2 {
     margin: 1.5em 0;
   }
 
-  .line{
-    width: 100%;
-    border: 2px solid #cccccc;
-    height: 2px;
+  /* circle row */
+
+  .circle-row {
+    padding: 2em 0;
   }
+
+  /* line row */
+
+  .line {
+    width: 90%;
+    border: 2px solid #cccccc;
+    height: 1px;
+    margin: auto;
+  }
+
+  /* main section */
+
+  main {
+
+  }
+
+  section {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1rem;
+  }
+
+  artcle {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards-article {
+    flex-basis: 2;
+  }
+  /* Headline */
+
+  .headline {
+    padding: 1em;
+  }
+
+  /* Cards  */
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin: 1em;
+  }
+
+  .card-img-top {
+    border: 3px solid #E6E6E6;
+  }
+
+  .card-body {
+    background-color: #e6e6e6;
+    height: 1.5em;
+    padding: .2em 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card-small-circles {
+    display: flex;
+    margin-left: .2em;
+  }
+
+  .box-small {
+    width: 20px;
+    height: 20px;
+    border-radius: 9999px;
+    text-align: center;
+    padding-bottom: 1em;
+    color: #000;
+    font-weight: bold;
+    margin-left: .3em;
+    font-size: .8em;
+  }
+
+  .box-small p {
+    margin-bottom: .4em;
+
+  }
+
+  /* Posts */
+
+  .posts {
+    flex-basis: 4;
+    margin-top: 0px;
+  }
+
+  .headline-posts {
+    padding: 1em 1em 0px 1em;
+  }
+
+  .post {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+    align-content: center;
+  }
+
+  .post img {
+    width: 50px;
+    height: 50px;
+    margin: auto 1em auto 0;
+  }
+
+  .post h4 {
+    margin-left: 0px;
+  }
+
+  /* Tweets */
+
+  .headline-tweet {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5em;
+  }
+
+  .headline-tweet img {
+    width: 25px;
+    height: 25px;
+    margin-right: 1em;
+  }
+
+  .headline-tweet p {
+    font-weight: bold;
+
+  }
+
+  .tweet p {
+    padding: 1em;
+  }
+
+
 }
 
